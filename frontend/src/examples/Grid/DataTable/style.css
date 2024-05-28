@@ -1,0 +1,295 @@
+h1,
+p {
+  font-family: Roboto;
+}
+
+.example-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  flex: 1 1 0px;
+}
+.my-stats {
+  text-align: left;
+  margin: auto;
+  padding: 0 0 0 10%;
+  width: 210px;
+  border: 1px 1px solid;
+  color: #181d1f;
+}
+.my-stats h1 {
+  border-top: 1px darkgrey solid;
+  padding: 5px;
+}
+.my-stats p span {
+  color: #2b6bdd;
+}
+button,
+input,
+select {
+  margin: 12px 4px;
+  border-radius: 5px;
+  border: 1px solid #2b6bdd;
+  padding: 0 15px;
+  color: #2b6bdd;
+  background: #ffffff;
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+}
+.button-group input {
+  float: right;
+  width: 300px;
+  margin-right: 0;
+  border-color: lightgrey;
+  color: grey;
+}
+.button-group button:nth-child(1) {
+  margin-left: 0;
+}
+
+.ag-theme-alpine .ag-row {
+  font-size: 12px;
+}
+
+span.badge {
+  color: black;
+  display: inline-block;
+  background-color: #e4e9ef;
+  border-radius: 10px;
+  height: 22px;
+  margin: 10px -10px;
+  padding: 0 13px;
+  overflow: auto;
+  line-height: 22px;
+}
+
+span.badge.InProgress,
+span.badge.PreInvoice,
+span.badge.Working,
+span.badge.Paid,
+span.badge.WorkFinished,
+span.badge.SubmitedtoOEM,
+span.badge.CheckedIn {
+  color: #16171a;
+  background-color: #ffd6c2;
+}
+
+span.badge.Corrected {
+  color: white;
+  background-color: #1a5915;
+}
+
+span.badge.InProcess{
+  color: black;
+  background-color: #e3edff;
+}
+span.badge.Viewed{
+  color: black;
+  background-color: #e3edff;
+}
+
+span.badge.Discrepancy {
+  color: black;
+  background-color: #ff7575;
+}
+
+span.badge.Workfinished {
+  color: black;
+  background-color: #c2ffbd;
+}
+
+span.badge.Rejected {
+  color: white;
+  background-color: #dd2b2b;
+}
+
+span.badge.CheckedIn,
+span.badge.Warranty {
+  color: white;
+  background-color: #96bdff;
+}
+
+span.badge.Returned {
+  color: white;
+  background-color: #dd2b2b;
+}
+
+span.badge.Completed,
+span.badge.Finalized,
+span.badge.Reconciled {
+  color: #16171a;
+  background-color: #d6c2ff;
+}
+span.badge.Default {
+  display: none;
+}
+
+.ag-row-group span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.chart {
+  width: 100%;
+  height: 250px;
+  background-image: url(https://raw.githubusercontent.com/TranceKelley/myImages/main/Chart%20Example.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+.overlay {
+  height: 1049px;
+  width: 100%;
+  background-image: url(https://raw.githubusercontent.com/TranceKelley/myImages/main/ServiceManager-WithAdvisor.png);
+  background-size: auto 100%;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: center;
+  top: 0;
+  margin: auto;
+  left: 100%;
+  width: 0;
+}
+
+.show {
+  left: 0;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+.overflowMenu {
+  position: relative;
+}
+
+.overflowMenu .popUp {
+  position: absolute;
+  top: 10px;
+  z-index: 3000000;
+}
+
+.tippy-content {
+  padding: 0;
+}
+
+.menu-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+  z-index: 1000;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 0.8rem;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.4rem;
+  left: -130px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 5px;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  background: rgb(240, 240, 240);
+}
+
+.menu-item.active {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+.menu-item {
+  display: block;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  border: 0;
+}
+.overflow {
+  font-size: 20px;
+  alignment: center;
+  color: #2b6bdd;
+  padding: 0;
+  margin: 0 -4px;
+  letter-spacing: -2px;
+  cursor: pointer;
+}
+
+.custom-tooltip {
+  width: 150px;
+  height: 70px;
+  border: 1px solid cornflowerblue;
+  overflow: hidden;
+}
+
+.custom-tooltip p {
+  margin: 5px;
+  white-space: nowrap;
+}
+
+.custom-tooltip p:first-of-type {
+  font-weight: bold;
+}
+.droptarget,
+.ROLink {
+  cursor: pointer;
+}
+.droptarget:hover {
+  color: #2b6bdd;
+}
+
+.modal {
+  background-size: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: center;
+  top: 0;
+  margin: auto;
+  width: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.modal.edit-customer {
+  background-image: url(https://raw.githubusercontent.com/TranceKelley/myImages/main/ModalCustomerInfo.png);
+  display: block;
+  backdrop-filter: blur(3px);
+}
+
+.modal.edit-vehicle {
+  background-image: url(https://raw.githubusercontent.com/TranceKelley/myImages/main/ModalVehicleInfo.png);
+  display: block;
+  backdrop-filter: blur(3px);
+}
+
+.ag-theme-alpine {
+  --ag-header-background-color: #e4e9ef;
+  --ag-row-hover-color: #f5f6f7;
+  --ag-odd-row-background-color: #fafafa;
+  --ag-border-color: #b2b6bf;
+  --ag-row-border-color: #cacfd9;
+
+  --ag-checkbox-checked-color: #2b6bdd;
+  --ag-checkbox-unchecked-color: #cacfd9;
+
+  --ag-alpine-active-color: #2b6bdd;
+  --ag-control-panel-background-color: #fafafa;
+  --ag-selected-tab-underline-color: #2b6bdd;
+  --ag-input-focus-border-color: #2b6bdd;
+  --ag-input-focus-box-shadow: none;
+}
